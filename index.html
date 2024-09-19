@@ -7,12 +7,39 @@
 		<link rel="stylesheet" href="src/style.css" />
 	</head>
 	<body>
-		<div>
-			<h1>Welcome to my Weather App</h1>
-			<p>Created in the land of constant sunniness.</p>
-		</div>
-		<footer>
+		<header>
+			<form>
+				<input type="search" placeholder="Enter a city..." />
+				<input type="submit" value="Search" />
+			</form>
+		</header>
+		<main>
 			<div>
+				<h1>Paris, France</h1>
+			</div>
+			<div>
+				<span id="current-temp">12</span>
+				<span id="current-temp-units">°C</span>
+			</div>
+			<div id="current-temp-icon">
+				🌤️
+				<p id="current-temp-sentence">
+					It is a nice day in Paris <span id="flag">🇫🇷</span>.
+				</p>
+			</div>
+
+			<div>
+				<p>Thursday 19th</p>
+			</div>
+			<div>
+				<p>
+					<span id="current-windspeed">4kps</span> /
+					<span id="current-temp-low">7°C</span>
+				</p>
+			</div>
+		</main>
+		<footer>
+			<div id="footer-container">
 				coded by
 				<a target="_blank" href="https://asyouwishwebsites.com"
 					>Wesley Hoplaros</a
