@@ -5,53 +5,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Weather App by As You Wish</title>
 		<link rel="stylesheet" href="src/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<header>
-			<form>
-				<input type="search" placeholder="Enter a city..." />
-				<input type="submit" value="Search" />
-			</form>
-		</header>
-		<main>
-			<div>
-				<h1>Paris, France</h1>
-			</div>
-			<div>
-				<span id="current-temp">12</span>
-				<span id="current-temp-units">°C</span>
-			</div>
-			<div id="current-temp-icon">
-				🌤️
-				<p id="current-temp-sentence">
-					It is a nice day in Paris <span id="flag">🇫🇷</span>.
-				</p>
-			</div>
+		<div class="weather-app">
+			<header>
+				<form>
+					<input type="search" placeholder="Enter a city..." />
+					<input type="submit" value="Search" />
+				</form>
+			</header>
+			<div class="weather-app-box">
+				<main>
+					<div>
+						<h1>Paris, France</h1>
+					</div>
+					<div>
+						<span id="current-temp">12</span>
+						<span id="current-temp-units">°C</span>
+					</div>
+					<div id="current-temp-icon">
+						🌤️
+						<p id="current-temp-sentence">
+							It is a nice day in Paris <span id="flag">🇫🇷</span>.
+						</p>
+					</div>
 
-			<div>
-				<p>Thursday 19th</p>
+					<div>
+						<p>Thursday 19th</p>
+					</div>
+					<div>
+						<p>
+							<span id="current-windspeed">4kps</span> /
+							<span id="current-temp-low">7°C</span>
+						</p>
+					</div>
+				</main>
 			</div>
-			<div>
-				<p>
-					<span id="current-windspeed">4kps</span> /
-					<span id="current-temp-low">7°C</span>
-				</p>
-			</div>
-		</main>
-		<footer>
-			<div id="footer-container">
-				coded by
-				<a target="_blank" href="https://asyouwishwebsites.com"
-					>Wesley Hoplaros</a
-				>
-				of As You Wish Websites obscurity. This app is stored on
-				<a target="_blank" href="https://github.com/whoplaros">GitHub</a> and
-				hosted on
-				<a target="_blank" href="https://asyouwishweather.netlify.app/"
-					>Netlify</a
-				>.
-			</div>
-		</footer>
+			<footer>
+				<div id="footer-container">
+					coded by
+					<a target="_blank" href="https://asyouwishwebsites.com"
+						>Wesley Hoplaros</a
+					>
+					of As You Wish Websites obscurity. This app is stored on
+					<a target="_blank" href="https://github.com/whoplaros">GitHub</a> and
+					hosted on
+					<a target="_blank" href="https://asyouwishweather.netlify.app/"
+						>Netlify</a
+					>.
+				</div>
+			</footer>
+		</div>
 		<script src="src/app.js"></script>
 	</body>
 </html>
