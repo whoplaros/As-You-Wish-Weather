@@ -15,8 +15,8 @@
 	<body>
 		<div class="weather-app">
 			<header>
-				<form class="search-form">
-					<input type="search" placeholder="Enter a city..." required class="search-form-input" />
+				<form class="search-form" id="search-form">
+					<input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input" />
 					<input type="submit" value="Search" class="search-form-button" />
 				</form>
 			</header>
@@ -27,7 +27,11 @@
 						<p class="weather-app-sentence">
 						It is a nice day in 
 						</p>
-						<h1 class="weather-app-city">Paris, France <span id="flag">🇫🇷</span></h1>
+						<h1 class="weather-app-city">
+							<span id="city">Paris</span>, 
+							<span id="country">France</span> 
+							<span id="flag">🇫🇷</span>
+						</h1>
 				
 						
 						<p class="weather-app-details">
