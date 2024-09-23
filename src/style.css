@@ -56,8 +56,8 @@ main {
 	line-height: 25px;
 }
 
-#current-humidity,
-#current-windspeed {
+#humidity,
+#windspeed {
 	color: #f65282;
 	font-weight: bold;
 }
