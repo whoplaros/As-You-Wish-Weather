@@ -40,15 +40,12 @@ header {
 main {
 	padding: 30px 0;
 }
-.weather-app-sentence {
-	font-size: 18px;
-	line-height: 25px;
-	margin-bottom: 0;
-}
+
 .weather-app-city {
 	margin: 0;
 	font-weight: 700;
 	font-size: 42px;
+	margin-bottom: -10px;
 }
 
 .weather-app-details {

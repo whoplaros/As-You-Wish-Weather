@@ -17,65 +17,55 @@
 		<div class="weather-app">
 			<header>
 				<form class="search-form" id="search-form">
-					<input 
-					type="search" 
-					placeholder="Enter a city..." 
-					required 
-					class="search-form-input" 
-					id="search-form-input" 
+					<input
+						type="search"
+						placeholder="Enter a city..."
+						required
+						class="search-form-input"
+						id="search-form-input"
 					/>
-					<input 
-					type="submit" 
-					value="Search" 
-					class="search-form-button" 
-					/>
+					<input type="submit" value="Search" class="search-form-button" />
 				</form>
 			</header>
 
 			<main>
 				<div class="weather-app-data">
 					<div>
-						<p class="weather-app-sentence">
-						It is a nice day in 
-						</p>
 						<h1 class="weather-app-city">
-							<span id="city"></span>, 
-							<span id="country"></span> 
-							<span id="flag">🇫🇷</span>
+							<span id="city"></span>
 						</h1>
-				
-						
+						<h2 class="weather-app-country"><span id="country"></span></h2>
+
 						<p class="weather-app-details">
-						<span id="time">Tues 16:45</span>, 
-						<span id="description"></span>
-						</br>
-						Humidity: 
-						<span id="humidity"></span>%, Windspeed:
-						<span id="windspeed"></span> meters/sec
+							<span id="time">Tues 16:45</span>, <span id="description"></span>
+							<br />Humidity: <span id="humidity"></span>%, Windspeed:
+							<span id="windspeed"></span> meters/sec
 						</p>
 					</div>
 
-				<div class="weather-app-temperature-container">
-					<div class="weather-app-icon" id="icon">🌤️</div>
-					<div class="weather-app-temperature" id="temperature"></div>
-					<div class="weather-app-unit">°C</div>
+					<div class="weather-app-temperature-container">
+						<div class="icon-wrapper">
+							<img source="" alt="" class="weather-app-icon" id="icon" />
+						</div>
+						<div class="weather-app-temperature" id="temperature"></div>
+						<div class="weather-app-unit">°C</div>
 					</div>
-					
 				</div>
 			</main>
-		
+
 			<footer>
 				<div id="footer-container">
 					This app was coded by
 					<a target="_blank" href="https://asyouwishwebsites.com"
-						>Wesley Hoplaros</a>, is stored on
-					<a target="_blank" href="https://github.com/whoplaros">GitHub</a> 
+						>Wesley Hoplaros</a
+					>. It is open-sourced on
+					<a target="_blank" href="https://github.com/whoplaros">GitHub</a>
 					and hosted on
 					<a target="_blank" href="https://asyouwishweather.netlify.app/"
 						>Netlify</a
 					>.
-			</div>
-		</footer>
+				</div>
+			</footer>
 		</div>
 		<script src="src/app.js"></script>
 	</body>
